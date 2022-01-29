@@ -1,0 +1,15 @@
+d1={}
+length = int(input("Enter length of array: "))
+arr = (input("Enter array: ")).split()
+if len(arr) != length:
+    print("Invalid Input")
+for i in arr:
+    if i not in d1.keys():
+        d1.update({i:1})
+    else:
+        d1[i]+=1
+m= max(d1.values())
+a1= list(d1.values())
+a1= a1[::-1].index(m)
+l= (list(d1.keys()))[::-1]
+print("%s %s"l[a1],m )
