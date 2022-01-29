@@ -1,0 +1,5 @@
+c=input("Enter your String): ")
+if(len(c)%2==0):
+    print("True")
+else:
+    print("False")
